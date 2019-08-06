@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+		<!-- 配置映射文件 -->
+	<mappers>
+		<!-- 	resource:注册类路径下的映射文件
+				url:网络上或本地磁盘的映射文件
+				class:通过指定接口全路径名注册映射文件
+					如果使用class属性必须保证映射文件和接口在同一个包下
+					或者在接口的方法上用@Select("select * from employees where id = #{id}")
+		 -->
+		<mapper resource="EmployeeMapper.xml" />
+		<mapper resource="DepartmentMapper.xml" />
+	</mappers>
+</configuration>
